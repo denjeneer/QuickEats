@@ -1,1 +1,83 @@
+/* Universal */
 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+/* Header */
+
+header {
+  height: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ff2406;
+  color: #ffffff;
+  padding: 0 2rem;
+  font-family: 'Yummy Foodies', 'Comic Sans MS';
+}
+
+#title {
+  font-size: 1.5rem;
+}
+
+nav {
+  width: 375px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+}
+
+nav li {
+  display: flex;
+  align-items: center;
+}
+
+nav li img {
+  width: 1.4375rem;
+  height: 1.4375rem;
+  border-radius: 50%;
+}
+
+
+/* Banner */
+
+#banner {
+  height: 30.875rem;
+  background-image: url('./Assets/SMLXL/S.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.35;
+}
+
+@media only screen {
+  @media (min-width: 720px) {
+    #banner {
+      background-image: url('./Assets/SMLXL/M.jpg');
+    }
+  }  
+
+  @media (min-width: 1140px) {
+    #banner {
+      background-image: url('./Assets/SMLXL/L.jpg');
+    }
+  }
+
+  @media (min-width: 1920px) {
+    #banner {
+      background-image: url('./Assets/SMLXL/XL.jpg');
+    }
+  }  
+}
