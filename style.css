@@ -3,6 +3,11 @@
   src:url(Font/Yummy-Foodies.ttf);
 }
 
+@font-face{
+  font-family: Inter-Regular;
+  src:url(Font/Inter-Regular.ttf);
+}
+
 /* Universal */
 
 * {
@@ -57,11 +62,47 @@ nav li img {
 }
 
 .apps-download {
+  display: flex;
   height: 645px;
   box-sizing: border-box;
   margin: 40px;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
 }
 
+.text-to-move {
+  position: relative;
+}
+
+.apps-download .text-to-move {
+  box-sizing: border-box;
+  display: flex;
+  width: 632px;
+  height: 250px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 10px;
+}
+
+#iOS-Android {
+  margin-right: 92px;
+}
+
+.text-to-move #eat {
+  padding-bottom: 37px;
+}
+
+.text-to-move #instructions {
+  font-family: Inter-Regular;
+  font-size: 15px;
+}
+
+.text-to-move img {
+  margin-right: 12px;
+  margin-top: 39px;
+}
 /* .apps-download #instructions */
 
   .text-to-move #eat {
