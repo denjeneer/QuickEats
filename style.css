@@ -1,3 +1,8 @@
+@font-face{
+  font-family: Yummy-Foodies;
+  src:url(Font/Yummy-Foodies.ttf);
+}
+
 /* Universal */
 
 * {
@@ -17,7 +22,7 @@ header {
   background-color: #ff2406;
   color: #ffffff;
   padding: 0 2rem;
-  font-family: 'Yummy Foodies', 'Comic Sans MS';
+  font-family: 'Yummy-Foodies', 'Comic Sans MS';
 }
 
 #title {
@@ -49,6 +54,25 @@ nav li img {
   width: 1.4375rem;
   height: 1.4375rem;
   border-radius: 50%;
+}
+
+.apps-download {
+  height: 645px;
+  box-sizing: border-box;
+  margin: 40px;
+}
+
+/* .apps-download #instructions */
+
+  .text-to-move #eat {
+  font-family: 'Yummy-Foodies', 'Comic Sans MS';
+  font-size: 2rem;
+  color: #ff2406;
+}
+
+.apps-download #playstore-logo {
+  border: -3px solid white;
+  border-radius: 15px;
 }
 
 
