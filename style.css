@@ -21,17 +21,23 @@
 
 header {
   height: 4rem;
+  background-color: #ff2406;
+  color: #ffffff;
+  font-family: Yummy-Foodies;
+  display: flex;
+}
+
+#header-container {
+  width: 1200px;
+  padding: 0 2rem;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #ff2406;
-  color: #ffffff;
-  padding: 0 2rem;
-  font-family: 'Yummy-Foodies', 'Comic Sans MS';
 }
 
 #title {
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 nav {
@@ -53,11 +59,12 @@ nav ul {
 nav li {
   display: flex;
   align-items: center;
+  font-size: 1.25rem;
 }
 
 nav li img {
-  width: 1.4375rem;
-  height: 1.4375rem;
+  width: 1.5rem;
+  height: 1.5rem;
   border-radius: 50%;
 }
 
