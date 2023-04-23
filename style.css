@@ -132,6 +132,7 @@ nav li img {
   background-size: cover;
   background-repeat: no-repeat;
   opacity: 0.35;
+  box-shadow: inset 0px 10px 30px rgba(0, 0, 0, 0.45);
 }
 
 @media only screen {
@@ -152,4 +153,16 @@ nav li img {
       background-image: url('./Assets/SMLXL/XL.jpg');
     }
   }  
+}
+
+@media screen {
+  @media (max-width: 1043px) {
+    #iOS-Android {
+      visibility: hidden;
+    }
+
+    .apps-download .text-to-move {
+      top: -250px;
+    }
+  }
 }
