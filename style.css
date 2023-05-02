@@ -124,6 +124,17 @@ nav li img {
 }
 
 
+@media screen {
+  @media (max-width: 1043px) {
+    #iOS-Android {
+      visibility: hidden;
+    }
+
+    .apps-download .text-to-move {
+      top: -250px;
+    }
+  }
+
 /* Banner */
 
 #banner {
