@@ -149,6 +149,10 @@ nav li img {
     .apps-download .text-to-move {
       top: -250px;
     }
+
+    .text-to-move p {
+      text-align: center;
+    }
   }
 
 /* Banner */
