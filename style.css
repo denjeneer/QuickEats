@@ -20,7 +20,7 @@
 /* Header */
 
 header {
-  height: 4rem;
+  height: 80px;
   background-color: #ff2406;
   color: #ffffff;
   font-family: Yummy-Foodies;
@@ -28,25 +28,29 @@ header {
 }
 
 #header-container {
+  min-width: 770px;
   width: 1200px;
-  padding: 0 2rem;
+  padding: 20px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 
-#title {
-  font-size: 2rem;
+#logo {
+  font-size: 32px;
 }
 
-nav {
-  width: 375px;
+#logo a {
+  text-decoration: none;
+  color: white;
 }
 
 nav a {
   text-decoration: none;
   color: #ffffff;
+  margin-left: 6px;
 }
 
 nav ul {
@@ -59,12 +63,24 @@ nav ul {
 nav li {
   display: flex;
   align-items: center;
-  font-size: 1.25rem;
+  font-size: 20px;
+  border-radius: 40px;
+  padding: 15px;
+}
+
+nav li:hover {
+  background-color: hsl(7, 100%, 65%);
+}
+
+nav li+li {
+  display: flex;
+  align-items: center;
+  margin-left: 3px;
 }
 
 nav li img {
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 25px;
+  height: 25px;
   border-radius: 50%;
 }
 
