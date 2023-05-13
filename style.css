@@ -20,78 +20,97 @@
 /* Header */
 
 header {
-  height: 80px;
   background-color: #ff2406;
   color: #ffffff;
   font-family: Yummy-Foodies;
   display: flex;
+  justify-content: space-between;
+  align-content: center;
 }
 
 #header-container {
-  min-width: 770px;
   width: 1200px;
-  padding: 20px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+#logo-container {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  font-size: 32px;
   position: relative;
 }
 
-#logo {
-  font-size: 32px;
+#menu-btn {
+  display: none;
 }
 
-#logo a {
-  text-decoration: none;
-  color: white;
-}
-
-nav a {
-  text-decoration: none;
-  color: #ffffff;
-  padding: 15px;
-  border-radius: 40px;
-  padding: 15px;
-}
-
-nav a:hover {
-  background-color: hsl(7, 100%, 65%);
-}
-
-.fa-solid {
-  margin-right: 6px;
+nav {
+  display: block;
 }
 
 nav ul {
+  padding: 20px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
   list-style-type: none;
 }
 
-nav li {
-  display: flex;
-  align-items: center;
+nav a {
+  padding: 15px 20px;
+  border-radius: 40px;
   font-size: 20px;
+  color: #ffffff;
+  text-decoration: none;
 }
 
-nav li+li {
-  display: flex;
-  align-items: center;
-  margin-left: 5px;
+nav li a:hover {
+  background-color: hsl(7, 100%, 65%);
 }
 
-nav li img {
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
+@media screen and (max-width: 1043px) {
+
+  #header-container, 
+  #logo-container {
+    display: block;
+    z-index: 1;
+  }
+
+  nav {
+    display: none;
+  }
+
+  #menu-btn {
+    display: block;
+    float: right;
+    cursor: pointer;
+  }
+
+  nav ul {
+    padding: 0;
+    flex-direction: column;
+    display: block;
+    margin: 0 20px 20px;
+  }
+
+  nav a {
+    display: block;
+    padding: 40px 0;
+    border-radius: 5px;
+    margin-top: 10px;
+    background-color: #d21900;
+    color: white;
+    text-align: center;
+  }
 }
 
 /* Banner */
 
 #banner {
-  height: 30.875rem;
+  height: 550px;
   background-image: linear-gradient(to right, #CD6502, #FFB700);
   background-size: cover;
   background-repeat: no-repeat;
