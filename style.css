@@ -71,6 +71,17 @@ nav li a:hover {
   background-color: hsl(7, 100%, 65%);
 }
 
+nav li img {
+  width: 20px;
+  height: 21px; 
+  border-radius: 50%;
+  vertical-align: bottom;
+}
+
+#select-country-text {
+  display: none;
+}
+
 @media screen and (max-width: 1043px) {
 
   #header-container, 
@@ -104,6 +115,10 @@ nav li a:hover {
     background-color: #d21900;
     color: white;
     text-align: center;
+  }
+
+  #select-country-text {
+    display: inline;
   }
 }
 
