@@ -154,6 +154,74 @@ nav li img {
   align-items: end;
 }
 
+/* Search Box */
+
+#search-box {
+  position: absolute;
+  top: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 3px 6px -3px black;
+  border-radius: 15px;
+  font-family: Yummy-Foodies, Inter, Ariel, sans-serif;
+  height: 250px;
+  width: 50%;
+  min-width: 500px;
+  max-width: 750px;
+  padding: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+}
+
+#search-box h2 {
+  font-family: Yummy-Foodies, Helvetica, sans-serif;
+  letter-spacing: 1px;
+  color: #FF2406;
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+#search-field {
+  display: flex;
+  border: 1px solid grey;
+  border-radius: 15px;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  box-sizing: border-box;
+}
+
+#search-input {
+  border: none;
+  font-size: 18px;
+  margin-left: 2%;
+  width: 80%;
+}
+
+#search-btn {
+  position: relative;
+  color: white;
+  font-size: 24px;
+  background-color: #FF2406;
+  border: none;
+  height: 90%;
+  padding: 5px 36px;
+  margin: 5px;
+  border-radius: 15px;
+}
+
+#search-btn:hover {
+  background-color: #B31500;
+}
+
+#search-btn:active {
+  top: 5px;
+  box-shadow: none;
+}
+
 .apps-download {
   display: flex;
   height: 645px;
