@@ -206,6 +206,7 @@ nav li img {
 }
 
 #search-btn {
+  cursor: pointer;
   position: relative;
   color: white;
   font-size: 24px;
@@ -229,7 +230,7 @@ nav li img {
 
 .apps-download {
   display: flex;
-  height: 600px;
+  height: 575px;
   box-sizing: border-box;
   margin: 40px;
   flex-wrap: wrap;
@@ -308,8 +309,15 @@ nav li img {
 
 #link-container {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  align-items: center;
   background-color: #eceaea;
+}
+
+.links {
+  width: 845px;
+  display: flex;
+  justify-content: space-between;
   overflow: scroll;
   height: 423px;
   align-items: center;
@@ -317,20 +325,21 @@ nav li img {
   overflow: hidden;
 }
 
-#link-container > ul > li{
+.links > ul > li{
   font-family: Inter-Light;
   margin: 15px;
   list-style: none;
 }
 
-#link-container > ul > li > a{
-font-size: 17px;
+.links > ul > li > a{
+font-size: 16px;
 }
 
-#link-container > ul{
+.links > ul{
   display: flex;
   flex-direction: column;
   max-height: 291px;
+  padding: 0;
 }
 
 .list-head{
@@ -341,6 +350,10 @@ font-size: 17px;
 /* External Link Section  End*/
 
 /* Footer */
+
+.links ul li  {
+  font-family: Inter-Regular;
+}
 
 #pay-container{
   display: flex;
