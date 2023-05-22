@@ -245,7 +245,7 @@ nav li img {
 .apps-download .text-to-move {
   box-sizing: border-box;
   display: flex;
-  width: 632px;
+  width: 600px;
   height: 250px;
   justify-content: center;
   flex-wrap: wrap;
@@ -288,12 +288,18 @@ nav li img {
 @media screen {
   @media (max-width: 1043px) {
     #iOS-Android {
-      visibility: hidden;
+      display: none;
     }
 
     .apps-download {
-      height: 425px;
-      margin-top: 150px;
+      position: relative;
+      height: 455px;
+      top: 300px;
+    }
+
+    .apps-download img {
+      width: 200px;
+      height: auto;
     }
 
     .apps-download .text-to-move {
