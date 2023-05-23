@@ -177,6 +177,7 @@ nav li img {
   left: 50%;
   transform: translateX(-50%);
   background-color: white;
+  z-index: 9999;
 }
 
 #search-box h2 {
@@ -293,6 +294,8 @@ nav li img {
 
     .apps-download {
       height:475px;
+      margin: 70px;
+      padding-top: 30px;
     }
 
     .apps-download img {
