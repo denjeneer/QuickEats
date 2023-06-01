@@ -1,19 +1,14 @@
 const menuBtn = document.getElementById("menu-btn");
-const nav = document.querySelector("nav");
-let isNavHidden = true;
+const closeBtn = document.getElementById("close-btn");
+const navMobile = document.querySelector(".nav-mobile");
 
 menuBtn.addEventListener("click", function() {
-  if (isNavHidden) {
-    menuBtn.innerHTML = "<i class=\"fa-solid fa-xmark\"></i>";
-    nav.style.display = "block";
-    isNavHidden = false;
-  } else {
-    menuBtn.innerHTML = "<i class=\"fa-solid fa-bars\"></i>";
-    nav.removeAttribute("style");
-    isNavHidden = true;
-  }
+  navMobile.style.display = "block";
 });
 
+closeBtn.addEventListener("click", function() {
+  navMobile.style.display = "none";
+});
 
 var acc = document.getElementsByClassName("accordion");
 var i;

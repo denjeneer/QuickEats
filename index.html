@@ -10,11 +10,11 @@
 <body>
   <header>
     <div id="header-container">
-      <div id="logo-container">
+      <div class="logo-container">
         <span id="menu-btn"><i class="fa-solid fa-bars"></i></span>
-        <span id="logo"><i class="fa-solid fa-bowl-food"></i> QuickEats </span>
+        <span class="logo"><i class="fa-solid fa-bowl-food"></i> QuickEats </span>
       </div>
-      <nav>
+      <nav class="nav-desktop">
         <ul>
           <li><a href="#"><i class="fa-solid fa-gift"></i> For You</a></li>
           <li><a href="#"><i class="fa-solid fa-building"></i> Corporate Orders</a></li>
@@ -25,6 +25,22 @@
       </nav>
     </div>
   </header>
+
+  <!-- Div for mobile navigation menu -->
+  <div class="nav-mobile">
+    <div class="logo-container">
+      <span id="close-btn"><i class="fa-solid fa-xmark"></i></span>      
+      <span class="logo"><i class="fa-solid fa-bowl-food"></i> QuickEats </span>
+    </div>
+    <ul>
+      <li><i class="fa-solid fa-gift"></i><span class="label">For You</span></li>
+      <li><i class="fa-solid fa-building"></i><span class="label">Corporate Orders</span></li>
+      <li><i class="fa-solid fa-right-to-bracket"></i><span class="label">Login</span></li>
+      <li><i class="fa-solid fa-circle-question"></i><span class="label">Help</span></li>
+      <li><img src="./Assets/country-flag.png"><span class="label select-country-text">Select Your Country</span></li>
+    </ul>
+  </div>
+
   <main>
     <div id="banner">
       <img src="./Assets/model.png" alt="model">
