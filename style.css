@@ -97,7 +97,7 @@ header {
   .nav-desktop {
     display: none;
   }
-  
+
   .logo-container {
     display: block;
   }
@@ -130,23 +130,24 @@ header {
   z-index: 1;
 }
 
-#close-btn {
-  display: inline-block;
-  position: absolute;
-  cursor: pointer;
-  font-size: 28px;
+.nav-mobile-header {
+  background-color: #ff2406;
+  color: white;
+  font-family: Yummy-Foodies;
+  font-size: 32px;
+  padding: 20px;
+  text-align: center;
 }
 
-.nav-mobile .logo-container {
-  background-color: #ff2406;
-  color: #fff;
+.nav-mobile #close-btn {
+  float: left;
+  cursor: pointer;
 }
 
 .nav-mobile li  {
-  display: flex;
-  align-items: center;
-  padding: 0 20px;
+  padding: 20px;
   margin: 0;
+  font-family: Inter-Regular;
   font-size: 20px;
   color: #ff2406;
 }
@@ -157,14 +158,13 @@ header {
 }
 
 .nav-mobile li .fa-solid {
+  display: inline-block;
   width: 50px;
   font-size: 28px;
 }
 
 .nav-mobile li .label {
   display: inline-block;
-  width: 100%;
-  padding: 20px 0;
   border-bottom: 1px solid hsl(240, 3%, 94%);
 }
 
