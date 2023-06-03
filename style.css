@@ -136,7 +136,13 @@ header {
   font-family: Yummy-Foodies;
   font-size: 32px;
   padding: 20px;
-  text-align: center;
+}
+
+.nav-mobile-logo {
+    width: 160px;
+    display: block;
+    position: relative;
+    margin: 0 auto;
 }
 
 .nav-mobile #close-btn {
@@ -145,11 +151,11 @@ header {
 }
 
 .nav-mobile li  {
-  padding: 20px;
   margin: 0;
   font-family: Inter-Regular;
   font-size: 20px;
   color: #ff2406;
+  padding: 20px;
 }
 
 .nav-mobile li:hover {
