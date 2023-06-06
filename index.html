@@ -1,1 +1,161 @@
+<!DOCTYPE html>
+<html>
 
+<head>
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="main.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <div id="header-container">
+      <div class="logo-container">
+        <span id="menu-btn"><i class="fa-solid fa-bars"></i></span>
+        <span class="logo"><i class="fa-solid fa-bowl-food"></i> QuickEats</span>
+      </div>
+      <nav class="nav-desktop">
+        <ul>
+          <li><a href="#"><i class="fa-solid fa-gift"></i> For You</a></li>
+          <li><a href="#"><i class="fa-solid fa-building"></i> Corporate Orders</a></li>
+          <li><a href="#"><i class="fa-solid fa-right-to-bracket"></i> Login</a></li>
+          <li><a href="#"><i class="fa-solid fa-circle-question"></i> Help</a></li>
+          <li><a href="#"><img src="./Assets/country-flag.png"> <span id="select-country-text">Select Your Country</span></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Div for mobile navigation menu -->
+  <div class="nav-mobile">
+    <div class="nav-mobile-header">
+      <span id="close-btn"><i class="fa-solid fa-xmark"></i></span>
+      <span class="nav-mobile-logo"><i class="fa-solid fa-bowl-food"></i> QuickEats</span>
+    </div>
+    <ul>
+      <li><i class="fa-solid fa-gift"></i><span class="label">For You</span></li>
+      <li><i class="fa-solid fa-building"></i><span class="label">Corporate Orders</span></li>
+      <li><i class="fa-solid fa-right-to-bracket"></i><span class="label">Login</span></li>
+      <li><i class="fa-solid fa-circle-question"></i><span class="label">Help</span></li>
+      <li><img src="./Assets/country-flag.png"><span class="label select-country-text">Select Your Country</span></li>
+    </ul>
+  </div>
+
+  <main>
+    <div id="banner">
+      <img src="./Assets/model.png" alt="model">
+    </div>
+    <div id="search-box">
+      <h2>What's good in your hood?</h2>
+      <div id="search-field">
+        <input type="text" id="search-input" placeholder="Your street or suburb" />
+        <input type="submit" name="search-btn" id="search-btn" value="search">
+      </div>
+    </div>
+    <!-- Div for the app store stuff -->
+    <div class="container">
+      <div class="apps-download">
+        <img src="Assets/apps_promo-narrow-au.png" alt="app display on iOS" width="240" height="310" id="iOS-Android">
+        <div class="text-to-move">
+          <p id="eat">Check us out on the app store</p>
+          <p id="instructions">To soothe those cravings quickly, get the QuickEats app on iOS or Android</p>
+          <img src="Assets/iOS app store.jpg" alt="iOS logo">
+          <img src="Assets/Google store logo.jpg" id='playstore-logo' alt="Google Play store logo">
+        </div>
+      </div>
+    </div>
+    <div  id="link-container">
+        <div class="links">
+          <ul>
+            <li class="list-head">Cuisines</li>
+            <li>Mexican</li>
+            <li>Indian</li>
+            <li>Asian</li>
+            <li>African</li>
+            <li>Haitian</li>
+        </ul>
+        <ul>
+            <li class="list-head">Brands</li>
+            <li><a>McDonalds</a></li>
+            <li><a>Hungry Jacks</a></li>
+            <li><a>Nandos</a></li>
+            <li><a>Subway</a></li>
+            <li><a>Guzman Y Gomez</a></li>
+        </ul>
+        <ul>
+            <li class="list-head">Cities</li>
+            <li><a>Sydney</a></li>
+            <li><a>Melbourne</a></li>
+            <li><a>Brisbane</a></li>
+            <li><a>Perth</a></li>
+            <li><a>Hobart</a></li>
+        </ul>
+        <ul>
+            <li class="list-head">About Us</li>
+            <li><a>About Menu</a></li>
+            <li><a>Contact Us</a></li>
+            <li><a>QuickEats Blog</a></li>
+            <li><a>Partner with us</a></li>
+            <li><a>Help Centre</a></li>
+        </ul>
+        </div>
+    </div>    
+    <!-- Drop down accordion to be hidden -->
+    <div class="drop-down">
+    <button class="accordion">Cuisines</button>
+    <div class="panel">
+      <ul>
+        <li>Mexican</li>
+        <li>Indian</li>
+        <li>Asian</li>
+        <li>African</li>
+        <li>Haitian</li>
+      </ul>
+    </div>
+
+    <button class="accordion">Brands</button>
+    <div class="panel">
+      <ul>
+        <li>McDonalds</li>
+        <li>Hungry Jacks</li>
+        <li>Nandos</li>
+        <li>Subway</li>
+        <li>Guzman Y Gomez</li>
+    </ul>
+    </div>
+
+    <button class="accordion">Cities</button>
+    <div class="panel">
+      <ul>
+        <li>Sydney</li>
+        <li>Melbourne</li>
+        <li>Brisbane</li>
+        <li>Perth</li>
+        <li>Hobart</li>
+    </ul>
+    </div>
+
+    <button class="accordion">About</button>
+    <div class="panel">
+      <ul>
+        <li>About Menu</li>
+        <li>Contact Us</li>
+        <li>QuickEats Blog</li>
+        <li>Partner with us</li>
+        <li>Help Centre</li>
+    </ul>
+    </div>
+    </div>
+  </main>
+  <footer>
+    <section class="grey-back">
+        <div id="pay-container">
+            <figure>
+              <img src="Assets/6220ac0f912013c51947f9c4.png" alt="">
+            </figure>
+        </div>
+    </section>
+</footer>
+</body>
+
+</html>

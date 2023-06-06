@@ -1,1 +1,509 @@
+@font-face{
+  font-family: Yummy-Foodies;
+  src:url(Font/Yummy-Foodies.ttf);
+}
 
+@font-face{
+  font-family: Inter-Regular;
+  src:url(Font/Inter-Regular.ttf);
+}
+
+/* Universal */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+}
+
+/* Header */
+
+header {
+  background-color: #ff2406;
+  color: #ffffff;
+  font-family: Yummy-Foodies;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+
+#header-container {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-container {
+  position: relative;
+  padding: 20px;
+  font-family: Yummy-Foodies;
+  font-size: 32px;
+  display: flex;
+  align-items: center;
+}
+
+#menu-btn {
+  display: none;
+}
+
+/* Desktop Navigation Menu */
+
+.nav-desktop {
+  display: block;
+}
+
+.nav-desktop ul {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+}
+
+.nav-desktop li a {
+  padding: 15px 20px;
+  border-radius: 40px;
+  font-size: 20px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.nav-desktop li a:hover {
+  background-color: hsl(7, 100%, 65%);
+}
+
+.nav-desktop li img {
+  width: 20px;
+  height: 21px; 
+  border-radius: 50%;
+  vertical-align: bottom;
+}
+
+#select-country-text {
+  display: none;
+}
+
+@media screen and (max-width: 1043px) {
+
+  #header-container {
+    display: block;
+  }
+
+  .nav-desktop {
+    display: none;
+  }
+
+  .logo-container {
+    display: block;
+  }
+
+  #menu-btn {
+    display: inline-block;
+    position: absolute;
+    cursor: pointer;
+  }
+
+  .logo {
+    width: 160px;
+    display: block;
+    position: relative;
+    margin: 0 auto;
+  }
+}
+
+/* Mobile Navigation Menu */
+
+.nav-mobile {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+  color: #ff2406;
+  z-index: 1;
+}
+
+.nav-mobile-header {
+  background-color: #ff2406;
+  color: white;
+  font-family: Yummy-Foodies;
+  font-size: 32px;
+  padding: 20px;
+}
+
+.nav-mobile-logo {
+    width: 160px;
+    display: block;
+    position: relative;
+    margin: 0 auto;
+}
+
+.nav-mobile #close-btn {
+  float: left;
+  cursor: pointer;
+}
+
+.nav-mobile li  {
+  margin: 0;
+  font-family: Inter-Regular;
+  font-size: 20px;
+  color: #ff2406;
+  padding: 20px;
+}
+
+.nav-mobile li:hover {
+  cursor: pointer;
+  background-color: hsl(240, 3%, 94%);
+}
+
+.nav-mobile li .fa-solid {
+  display: inline-block;
+  width: 50px;
+  font-size: 28px;
+}
+
+.nav-mobile li .label {
+  display: inline-block;
+  border-bottom: 1px solid hsl(240, 3%, 94%);
+}
+
+.nav-mobile li img {
+  width: 29px;
+  height: 29px; 
+  border-radius: 50%;
+  vertical-align: bottom;
+  margin-right: 20px;
+}
+
+/* Banner */
+
+#banner {
+  height: 550px;
+  background-image: linear-gradient(to right, #CD6502, #FFB700);
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.35;
+  box-shadow: inset 0px 10px 30px rgba(0, 0, 0, 0.45);
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
+/* Search Box */
+
+#search-box {
+  position: absolute;
+  top: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 3px 6px -3px black;
+  border-radius: 15px;
+  font-family: Yummy-Foodies, Inter, Ariel, sans-serif;
+  height: 250px;
+  width: 50%;
+  min-width: 500px;
+  max-width: 750px;
+  padding: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+  /* z-index: 9999; */
+}
+
+#search-box h2 {
+  font-family: Yummy-Foodies, Helvetica, sans-serif;
+  letter-spacing: 1px;
+  color: #FF2406;
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+#search-field {
+  display: flex;
+  border: 1px solid grey;
+  border-radius: 15px;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  box-sizing: border-box;
+}
+
+#search-input {
+  border: none;
+  font-size: 18px;
+  margin-left: 2%;
+  width: 80%;
+}
+
+#search-btn {
+  cursor: pointer;
+  position: relative;
+  color: white;
+  font-size: 24px;
+  background-color: #FF2406;
+  border: none;
+  height: 90%;
+  padding: 5px 36px;
+  margin: 5px;
+  border-radius: 15px;
+}
+
+#search-btn:hover {
+  background-color: #B31500;
+}
+
+
+#search-btn:active {
+  top: 5px;
+  box-shadow: none;
+}
+
+.apps-download {
+  display: flex;
+  height: 575px;
+  box-sizing: border-box;
+  margin: 40px;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+}
+
+.text-to-move {
+  position: relative;
+}
+
+.apps-download .text-to-move {
+  box-sizing: border-box;
+  display: flex;
+  width: 600px;
+  height: 250px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 10px;
+}
+
+#iOS-Android {
+  margin-right: 92px;
+}
+
+.text-to-move #eat {
+  padding-bottom: 37px;
+}
+
+.text-to-move #instructions {
+  font-family: Inter-Regular;
+  font-size: 15px;
+}
+
+.text-to-move img {
+  margin-right: 12px;
+  margin-top: 39px;
+}
+
+/* .apps-download #instructions */
+
+  .text-to-move #eat {
+  font-family: 'Yummy-Foodies', 'Comic Sans MS';
+  font-size: 2rem;
+  color: #ff2406;
+}
+
+.apps-download #playstore-logo {
+  border: -3px solid white;
+  border-radius: 15px;
+}
+
+
+@media screen {
+  @media (max-width: 1043px) {
+    #iOS-Android {
+      display: none;
+    }
+
+    .apps-download {
+      height:475px;
+      margin: 70px;
+      padding-top: 30px;
+    }
+
+    .apps-download img {
+      width: 200px;
+      height: auto;
+    }
+
+    .apps-download .text-to-move {
+      align-content: center;
+    }
+
+    .text-to-move p {
+      text-align: center;
+    }
+  }
+
+/* External Link Section */
+
+#link-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eceaea;
+}
+
+.links {
+  width: 845px;
+  display: flex;
+  justify-content: space-between;
+  overflow: scroll;
+  height: 423px;
+  align-items: center;
+  font-family: Inter-Regular;
+  overflow: hidden;
+}
+
+.links > ul > li{
+  font-family: Inter-Light;
+  margin: 15px;
+  list-style: none;
+}
+
+.links > ul > li > a{
+font-size: 16px;
+}
+
+.links > ul{
+  display: flex;
+  flex-direction: column;
+  max-height: 291px;
+  padding: 0;
+}
+
+.list-head{
+  font-family: Inter-Medium;
+  font-size: 24px;
+  /* padding-left: 50px; */
+}
+/* External Link Section  End*/
+
+/* Footer */
+
+.links ul li  {
+  font-family: Inter-Regular;
+}
+
+#pay-container{
+  display: flex;
+  /* send payment icons to the right */
+  justify-content: flex-end;
+  max-height: 143px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-right: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #C2C2C2;
+}
+
+#pay-container figure img {
+  width: 321px;
+  height: 67px;
+}
+
+#payment-icons{
+  background-color: #C2C2C2;
+  display: flex;
+  justify-content: flex-end; 
+  align-items: center;
+  list-style: none;
+  font-size: 25px;
+  width: 100%;
+  height: 143px;
+  
+}
+
+.grey-back {
+  background-color: #C2C2C2;
+}
+
+.drop-down {
+  display: none;
+  font-family: Inter-Light;
+}
+
+@media screen {
+  @media (max-width: 1043px) {
+    #link-container {
+      display: none;
+    }
+    
+    .drop-down {
+      display: block;
+      font-family: Inter-Regular;
+    }  
+
+    .accordion {
+      background-color: #eee;
+      color: #444;
+      cursor: pointer;
+      padding: 18px;
+      width: 100%;
+      text-align: left;
+      border: none;
+      outline: none;
+      transition: 0.4s;
+      font-size: 15px;
+      font-family: Inter-Regular;
+      }
+
+      /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+      .active, .accordion:hover {
+      background-color: #ccc;
+      }
+
+      .panel {
+      padding: 0 18px;
+      background-color: white;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.2s ease-out;
+      }
+
+      .accordion:after {
+      content: '+'; /* Unicode character for "plus" sign (+) */
+      font-size: 18px;
+      color: #777;
+      float: right;
+      margin-left: 5px;
+      }
+
+      .active:after {
+      content: "-"; /* Unicode character for "minus" sign (-) */
+      }
+
+      ul {
+        font-family: Inter-Regular;
+        padding-inline-start: 0px;
+      }
+
+      ul > li{
+      padding-left: 0px;
+      font-family: Inter-Regular;
+      color: #444;
+      margin: 15px;
+      list-style: none;
+      }
+
+      ul > li {
+      font-size: 16px;
+      }
+  }
+/* Footer End */
